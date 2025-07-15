@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>new-member</title>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-</head>
-<body>
-    <form class="add-member container" method="get">
-        <div class="row">
-            <div class="col">
-                <h3>افزودن کاربر جدید</h3>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>new-member</title>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <form class="add-member container" method="get">
+            <div class="row">
+                <div class="col">
+                    <h3>افزودن کاربر جدید</h3>
+                </div>
             </div>
-        </div>
-        <div class="line"></div>
-        <div class="row-1">
-            <div class="col">
-                <input type="text" placeholder="نام">
+            <div class="line"></div>
+            <div class="row-1">
+                <div class="col myfloat">
+                    <input placeholder="نام" type="text" name="firstname" required >
+                </div>
             </div>
-        </div>
-        <div class="row-1">
-            <div class="col formgroup">
-                <input id="name" type="text" placeholder=" nfkj">
+            <div class="row-1">
+                <div class="col labelp">
+                    <input name="lastname" type="text" required placeholder="نام خانوادگی">
+                </div>
             </div>
-        </div>
-        <div class="row-1">
-            <div class="col">
-                <input type="text" placeholder="نام">
+            <div class="row-1">
+                <div class="col labelp">
+                    <input type="text" name="nationalcode" required placeholder="کد ملی">
+                </div>
             </div>
-        </div>
-        <div class="row-1">
-            <div class="col">
-                <input type="text" placeholder="نام">
+            <div class="row-1">
+                <div class="col labelp">
+                    <input type="email" name="email" required placeholder="ایمیل">
+                </div>
             </div>
-        </div>
-        <div class="row-1">
-            <div class="col">
-                <input type="text" placeholder="نام">
+            <div class="row-1">
+                <div class="col labelp">
+                    <input type="password" name="password" required placeholder="رمز عبور">
+                </div>
+                <div class="col">
+                    <p class="myp">رمز عبور باید حداقل 6 کاراکتر و شامل حروف بزرگ، کوچک، اعداد و علائم خاص باشد.</p>
+                </div>
             </div>
-        </div>
-        <div class="row-1">
-            <div class="col">
-                <input type="text" placeholder="نام">
+            <div class="row-1">
+                <div class="col labelp">
+                    <label for="nafhsh">
+                    <b>نقش</b>  
+                    </label>
+                    <select id="nafhsh" name="nafhsh" required>
+                        <option value="0" selected>کاربر عادی</option>
+                        <option value="1">مدیر</option>
+                        <option value="2">مدیر سیستم</option>
+                        <option value="3">مدیر شرکت</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <div class="row-1">
-            <div class="col">
-                <input type="text" placeholder="نام">
-            </div>
-        </div>
-        <div class="line"></div>
-        <div class="row">
-            <div class="col">
-                <button type="button" class="btn-b">انصراف</button>
-            </div>
-            <div class="col">
-                <button type="submit" class="btn-a">افزودن</button>
-            </div>
-    </form> 
-</body>
+            <div class="line"></div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn-b">انصراف</button>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn-a">افزودن</button>
+                </div>
+        </form> 
+    </body>
 </html>

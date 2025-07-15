@@ -21,7 +21,7 @@ body{
     margin: 30px;
     width: 75%;
 }
-.add-member input{
+.add-member input,.add-member select{
     position: relative;
     width: 100%;
     border: 1px solid #fff;
@@ -63,3 +63,27 @@ body{
     padding-right: 10px;
     background-color: #ccc;
 }
+select:hover{
+    padding-right: 10px;
+    background-color: #ccc;
+}
+.myp{
+    margin-top: 4px;
+    color: #fff;
+    opacity:0.7;
+    font-size: 12px;
+}
+label{ 
+    font-size: 20px;
+   color: #fff;
+}
+/*.myfloat{
+    position: relative;
+}
+.add-member input{
+    position: absolute;
+    outline: none;
+    background-color: transparent;
+    transition: 0.1s ease;
+    z-index: 11;
+}*/
