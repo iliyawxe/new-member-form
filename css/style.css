@@ -102,6 +102,12 @@ body {
     background-color: #ccc;
     padding-right: 10px;
 }
+.add-member input:valid {
+    background-color: #7297c3;
+}
+.add-member .myselect:valid {
+    background-color: #7297c3;
+}
 .myp {
     margin-top: 20px;
     margin-right: 8px;
@@ -125,16 +131,16 @@ body {
     z-index: 1;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f0f0f0;
-  border-radius: 10px;
+    background: #f0f0f0;
+    border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
+    background: #888;
+    border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
