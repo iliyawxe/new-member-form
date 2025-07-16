@@ -4,8 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>new-member</title>
-        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/bootstrap.rtl.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <script src="js/bootstrap.bundle.js"></script>
     </head>
     <body>
         <form class="add-member" method="get">
@@ -23,88 +24,100 @@
                     </div>
                 </div>
             </div>
-
             <div class="line"></div>
-            <div class="row-1">
-                <div class="col form-group">
-                    <input
-                        type="text"
-                        id="firstname"
-                        name="firstname"
-                        placeholder=" "
-                        required
-                    />
-                    <label class="mylabel" for="firstname">نام</label>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      اطلاعات اصلی
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row-1">
+                            <div class="col form-group">
+                                <input
+                                    type="text"
+                                    id="firstname"
+                                    name="firstname"
+                                    placeholder=" "
+                                    required
+                                />
+                                <label class="mylabel" for="firstname">نام</label>
+                            </div>
+                        </div>
+                        <div class="row-1">
+                            <div class="col form-group">
+                                <input
+                                    name="lastname"
+                                    id="lastname"
+                                    type="text"
+                                    required
+                                    placeholder=" "
+                                />
+                                <label class="mylabel" for="lastname">نام خانوادگی</label>
+                            </div>
+                        </div>
+                        <div class="row-1">
+                            <div class="col form-group">
+                                <input
+                                    type="text"
+                                    name="nationalcode"
+                                    id="nationalcode"
+                                    required
+                                    placeholder=" "
+                                />
+                                <label class="mylabel" for="nationalcode">کد ملی</label>
+                            </div>
+                        </div>
+                        <div class="row-1">
+                            <div class="col form-group">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    required
+                                    placeholder=" "
+                                />
+                                <label class="mylabel" for="email">ایمیل</label>
+                            </div>
+                        </div>
+                        <div class="row-1">
+                            <div class="col form-group">
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    required
+                                    placeholder=" "
+                                />
+                                <label class="mylabel" for="password">رمز عبور</label>
+                            </div>
+                            <div class="col">
+                                <p class="myp">
+                                    رمز عبور باید حداقل 6 کاراکتر و شامل حروف بزرگ، کوچک،
+                                    اعداد و علائم خاص باشد.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row-1">
+                            <div class="col naghsh">
+                                <label class="mynaghsh" for="person">نقش</label>
+                                <select class="myselect" id="person" name="naghsh" required>
+                                    <option value="" selected disabled hidden>
+                                        یک نقش انتخاب کنید
+                                    </option>
+                                    <option value="0">کاربر عادی</option>
+                                    <option value="1">مدیر</option>
+                                    <option value="2">مدیر سیستم</option>
+                                    <option value="3">مدیر شرکت</option>
+                                </select>
+                            </div>
+                        </div>
+                   </div>
+                  </div>
                 </div>
-            </div>
-            <div class="row-1">
-                <div class="col form-group">
-                    <input
-                        name="lastname"
-                        id="lastname"
-                        type="text"
-                        required
-                        placeholder=" "
-                    />
-                    <label class="mylabel" for="lastname">نام خانوادگی</label>
-                </div>
-            </div>
-            <div class="row-1">
-                <div class="col form-group">
-                    <input
-                        type="text"
-                        name="nationalcode"
-                        id="nationalcode"
-                        required
-                        placeholder=" "
-                    />
-                    <label class="mylabel" for="nationalcode">کد ملی</label>
-                </div>
-            </div>
-            <div class="row-1">
-                <div class="col form-group">
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        required
-                        placeholder=" "
-                    />
-                    <label class="mylabel" for="email">ایمیل</label>
-                </div>
-            </div>
-            <div class="row-1">
-                <div class="col form-group">
-                    <input
-                        type="password"
-                        name="password"
-                        id="password"
-                        required
-                        placeholder=" "
-                    />
-                    <label class="mylabel" for="password">رمز عبور</label>
-                </div>
-                <div class="col">
-                    <p class="myp">
-                        رمز عبور باید حداقل 6 کاراکتر و شامل حروف بزرگ، کوچک،
-                        اعداد و علائم خاص باشد.
-                    </p>
-                </div>
-            </div>
-            <div class="row-1">
-                <div class="col naghsh">
-                    <label class="mynaghsh" for="person">نقش</label>
-                    <select class="myselect" id="person" name="naghsh" required>
-                        <option value="" selected disabled hidden>
-                            یک نقش انتخاب کنید
-                        </option>
-                        <option value="0">کاربر عادی</option>
-                        <option value="1">مدیر</option>
-                        <option value="2">مدیر سیستم</option>
-                        <option value="3">مدیر شرکت</option>
-                    </select>
-                </div>
-            </div>
+            </div> 
             <div class="line"></div>
             <div class="row">
                 <div class="col">

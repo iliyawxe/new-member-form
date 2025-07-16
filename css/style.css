@@ -144,3 +144,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+.accordion-body{
+    background-color: rgb(36, 36, 46);
+}
