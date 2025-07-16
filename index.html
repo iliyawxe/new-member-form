@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>new-member</title>
         <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/all.min.css"/>
         <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
@@ -16,40 +17,44 @@
             </div>
             <div class="line"></div>
             <div class="row-1">
-                <div class="col myfloat">
-                    <input placeholder="نام" type="text" name="firstname" required >
+                <div class="col form-group">
+                    <input type="text" id="firstname" name="firstname" placeholder=" " required>
+                    <label class="mylabel" for="firstname">نام</label>
                 </div>
             </div>
             <div class="row-1">
-                <div class="col labelp">
-                    <input name="lastname" type="text" required placeholder="نام خانوادگی">
+                <div class="col form-group">
+                    <input name="lastname" id="lastname" type="text" required placeholder=" ">
+                    <label class="mylabel" for="lastname">نام خانوادگی</label>
                 </div>
             </div>
             <div class="row-1">
-                <div class="col labelp">
-                    <input type="text" name="nationalcode" required placeholder="کد ملی">
+                <div class="col form-group">
+                    <input type="text" name="nationalcode" id="nationalcode" required placeholder=" ">
+                    <label class="mylabel" for="nationalcode">کد ملی</label>
                 </div>
             </div>
             <div class="row-1">
-                <div class="col labelp">
-                    <input type="email" name="email" required placeholder="ایمیل">
+                <div class="col form-group">
+                    <input type="email" name="email" id="email" required placeholder=" ">
+                    <label class="mylabel" for="email">ایمیل</label>
                 </div>
             </div>
             <div class="row-1">
-                <div class="col labelp">
-                    <input type="password" name="password" required placeholder="رمز عبور">
+                <div class="col form-group">
+                    <input type="password" name="password" id="password" required placeholder=" ">
+                    <label class="mylabel" for="password">رمز عبور</label>
                 </div>
                 <div class="col">
                     <p class="myp">رمز عبور باید حداقل 6 کاراکتر و شامل حروف بزرگ، کوچک، اعداد و علائم خاص باشد.</p>
                 </div>
             </div>
             <div class="row-1">
-                <div class="col labelp">
-                    <label for="nafhsh">
-                    <b>نقش</b>  
-                    </label>
-                    <select id="nafhsh" name="nafhsh" required>
-                        <option value="0" selected>کاربر عادی</option>
+                <div class="col naghsh">
+                    <label class="mynaghsh" for="person">نقش</label>
+                    <select id="person" name="naghsh" required>
+                        <option value="" selected disabled hidden>یک نقش انتخاب کنید</option>
+                        <option value="0">کاربر عادی</option>
                         <option value="1">مدیر</option>
                         <option value="2">مدیر سیستم</option>
                         <option value="3">مدیر شرکت</option>
@@ -64,6 +69,7 @@
                 <div class="col">
                     <button type="submit" class="btn-a">افزودن</button>
                 </div>
+            </div>
         </form> 
     </body>
 </html>
