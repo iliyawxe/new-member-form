@@ -4,18 +4,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 .add-member {
-    overflow-y: auto;
-    overflow-x: hidden;
+    height: 90%;
     width: 50%;
     justify-items: center;
     background-color: rgb(36, 36, 46);
     border-radius: 12px;
     padding: 20px;
     border: 1px solid rgb(41, 41, 43);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .form-group {
     position: relative;
@@ -124,4 +123,18 @@ body {
     border-radius: 4px;
     background-color: rgb(36, 36, 46);
     z-index: 1;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
