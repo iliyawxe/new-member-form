@@ -7,7 +7,7 @@ body {
 }
 .add-member {
     height: 90%;
-    width: 50%;
+    width: 80%;
     justify-items: center;
     background-color: rgb(36, 36, 46);
     border-radius: 12px;
@@ -22,11 +22,6 @@ body {
 .add-member h3 {
     color: #fff;
     box-sizing: border-box;
-}
-
-.row-1 {
-    margin: 30px;
-    width: 75%;
 }
 .add-member input,
 .add-member .myselect {
@@ -103,10 +98,12 @@ body {
     padding-right: 10px;
 }
 .add-member input:valid {
-    background-color: #7297c3;
+    background-color: #023e7d;
+    color:#fff;
 }
 .add-member .myselect:valid {
-    background-color: #7297c3;
+    background-color: #023e7d;
+    color: #fff;
 }
 .myp {
     margin-top: 20px;
@@ -144,6 +141,35 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-.accordion-body{
+.form-check-input.form-check-input:not(:checked) {
+    background-color: #ccc;
+    border-color:#999;
+
+  }
+.form-check-input.form-check-input:checked{
+    background-color:#023e7d;
+    border-color: #1bd8d8;
+  }
+  .form-check{
+    display: flex;
+    align-items: center;
+  }
+  .form-check-input{
+
+  }
+  .form-check-label{
+    color: #fff;
+  }
+  .accordion-body{
     background-color: rgb(36, 36, 46);
+}
+.accordion-button:not(.collapsed){
+    background-color: #ccc;
+    color: #000;
+}
+.accordion-button.collapsed::after{
+    color: #fff;
+}
+.accordion-button.collapsed{
+   width: 100%;
 }
