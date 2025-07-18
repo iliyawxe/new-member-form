@@ -99,7 +99,7 @@ body {
 }
 .add-member input:valid {
     background-color: #023e7d;
-    color:#fff;
+    color: #fff;
 }
 .add-member .myselect:valid {
     background-color: #023e7d;
@@ -143,33 +143,47 @@ body {
 }
 .form-check-input.form-check-input:not(:checked) {
     background-color: #ccc;
-    border-color:#999;
-
-  }
-.form-check-input.form-check-input:checked{
-    background-color:#023e7d;
+    border-color: #999;
+}
+.form-check-input.form-check-input:checked {
+    background-color: #023e7d;
     border-color: #1bd8d8;
-  }
-  .form-check{
+}
+.form-check {
     display: flex;
     align-items: center;
-  }
-  .form-check-input{
-
-  }
-  .form-check-label{
+}
+.form-check-input {
+}
+.form-check-label {
     color: #fff;
-  }
-  .accordion-body{
+}
+.accordion-body {
     background-color: rgb(36, 36, 46);
 }
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
     background-color: #ccc;
     color: #000;
 }
-.accordion-button.collapsed::after{
+.accordion-button.collapsed::after {
     color: #fff;
 }
-.accordion-button.collapsed{
-   width: 100%;
+.accordion-button.collapsed {
+    width: 100%;
+}
+.accordion {
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 4px 4px #000;
+}
+.checkbx {
+    position: relative;
+}
+.checkbx1 {
+    position: absolute;
+}
+.checkbx2 {
+    position: absolute;
+    top: 13px;
+    right: 50px;
 }
