@@ -22,6 +22,7 @@ body {
 .add-member h3 {
     color: #fff;
     box-sizing: border-box;
+    font-size: 26px;
 }
 .add-member input,
 .add-member .myselect {
@@ -60,8 +61,14 @@ body {
 .line {
     margin: 20px 0px;
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: #fff;
+}
+.line-vip {
+    margin: 35px 0px;
+    width: 100%;
+    height: 1px;
+    background-color: #666;
 }
 .btn-a {
     border: none;
@@ -178,9 +185,6 @@ body {
 }
 .checkbx {
     position: relative;
-}
-.checkbx1 {
-    position: absolute;
 }
 .checkbx2 {
     position: absolute;

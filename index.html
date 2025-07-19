@@ -6,6 +6,7 @@
         <title>new-member</title>
         <link rel="stylesheet" href="css/bootstrap.rtl.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
         <script src="js/bootstrap.bundle.js"></script>
     </head>
     <body>
@@ -30,23 +31,24 @@
             <div class="container">
                 <div class="accordion" id="accordion1">
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="heading1">
                             <button
-                                class="accordion-button"
+                                class="accordion-button collapsed"
                                 type="button"
                                 data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne"
+                                data-bs-target="#collapse1"
                                 aria-expanded="true"
-                                aria-controls="collapseOne"
+                                aria-controls="collapse1"
                             >
-                                اطلاعات اصلی
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span class="ms-2">اطلاعات اصلی</span>
                             </button>
                         </h2>
                         <div
-                            id="collapseOne"
-                            class="accordion-collapse collapse show"
-                            aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample"
+                            id="collapse1"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="heading1"
+                            data-bs-parent="#accordion1"
                         >
                             <div class="accordion-body container">
                                 <div
@@ -88,15 +90,15 @@
                                         <div class="col form-group">
                                             <input
                                                 type="text"
-                                                name="nationalcode"
-                                                id="nationalcode"
+                                                name="phonenumber"
+                                                id="phonenumber"
                                                 required
                                                 placeholder=" "
                                             />
                                             <label
                                                 class="mylabel"
-                                                for="nationalcode"
-                                                >کد ملی</label
+                                                for="phonenumber"
+                                                >شماره تلفن</label
                                             >
                                         </div>
                                     </div>
@@ -173,7 +175,7 @@
                                             class="checkbx form-check form-switch d-flex align-items-center gap-2"
                                         >
                                             <input
-                                                class="checkbx1 form-check-input"
+                                                class="checkbx2 form-check-input"
                                                 name="superuser"
                                                 type="checkbox"
                                                 id="superuser"
@@ -190,7 +192,7 @@
                                             class="checkbx form-check form-switch d-flex align-items-center gap-2"
                                         >
                                             <input
-                                                class="checkbx1 form-check-input"
+                                                class="checkbx2 form-check-input"
                                                 name="active-user"
                                                 type="checkbox"
                                                 id="active-user"
@@ -207,6 +209,372 @@
                         </div>
                     </div>
                 </div>
+                <div class="line-vip"></div>    
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapse2"
+                                aria-expanded="true"
+                                aria-controls="collapse2"
+                            >
+                            <i class="fa-solid fa-user-pen"></i>
+                            <span class="ms-2">اطلاعات شخصی</span>
+                            </button>
+                        </h2>
+                        <div
+                            id="collapse2"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="heading2"
+                            data-bs-parent="#accordion2"
+                        >
+                            <div class="accordion-body container">
+                                <div
+                                    class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-lg-6"
+                                >
+                                    <div class="col mb-3 ps-0">
+                                        <div class="form-group">
+                                            <input
+                                                type="text"
+                                                id="employeecode"
+                                                name="employeecode"
+                                                placeholder=" "
+                                                required
+                                            />
+                                            <label
+                                                class="mylabel"
+                                                for="employeecode"
+                                                >کد کارمندی</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3 ps-0">
+                                        <div class="form-group">
+                                            <input
+                                                name="nationalcode"
+                                                id="nationalcode"
+                                                type="text"
+                                                required
+                                                placeholder=" "
+                                            />
+                                            <label
+                                                class="mylabel"
+                                                for="nationalcode"
+                                                >کد ملی</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3 ps-0">
+                                        <div class="col form-group">
+                                            <input
+                                                type="text"
+                                                name="nationalcode"
+                                                id="nationalcode"
+                                                required
+                                                placeholder=" "
+                                            />
+                                            <label
+                                                class="mylabel"
+                                                for="nationalcode"
+                                                >کد ملی</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3 ps-0">
+                                        <div class="col form-group">
+                                            <input
+                                                type="date"
+                                                name="date-birthday"
+                                                id="date-birthday"
+                                                required
+                                                placeholder=" "
+                                            />
+                                            <label class="mylabel" for="date-birthday"
+                                                >تاریخ تولد</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3 ps-0">
+                                        <div class="col form-group">
+                                            <input
+                                                type="date"
+                                                name="date-employment"
+                                                id="date-employment"
+                                                required
+                                                placeholder=" "
+                                            />
+                                            <label
+                                                class="mylabel"
+                                                for="date-employment"
+                                                >تاریخ استخدام</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3 ps-0">
+                                        <div class="col form-group">
+                                            <input
+                                                type="text"
+                                                name="post"
+                                                id="post"
+                                                required
+                                                placeholder=" "
+                                            />
+                                            <label
+                                                class="mylabel"
+                                                for="post"
+                                                >سمت</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3 ps-0">
+                                        <div class="col form-group">
+                                            <input
+                                                type="text"
+                                                name="working-h"
+                                                id="working-h"
+                                                required
+                                                placeholder=" "
+                                            />
+                                            <label
+                                                class="mylabel"
+                                                for="working-h"
+                                                >ساعت کاری</label
+                                            >
+                                        </div>
+                                    </div>
+                                   <div class="col mb-3 ps-0">
+                                        <div class="col form-group">
+                                            <input
+                                                type="text"
+                                                name="Bio"
+                                                id="Bio"
+                                                required
+                                                placeholder=" "
+                                            />
+                                            <label
+                                                class="mylabel"
+                                                for="Bio"
+                                                >بیوگرافی</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="line-vip"></div>    
+                <div class="accordion" id="accordion3">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapse3"
+                                aria-expanded="true"
+                                aria-controls="collapse3"
+                            >
+                            <i class="fa-solid fa-user-gear"></i>
+                            <span class="ms-2">اطلاعات کاری</span>
+                            </button>
+                        </h2>
+                        <div
+                            id="collapse3"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="heading3"
+                            data-bs-parent="#accordion3"
+                        >
+                            <div class="accordion-body container">
+                                <div
+                                    class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-lg-6"
+                                >
+                                    <div class="col mb-3 ps-0">
+                                        <div class="col naghsh">
+                                            <label class="mynaghsh" for="person"
+                                                >نقش</label
+                                            >
+                                            <select
+                                                class="myselect"
+                                                id="person"
+                                                name="naghsh"
+                                                required
+                                            >
+                                                <option
+                                                    value=""
+                                                    selected
+                                                    disabled
+                                                    hidden
+                                                >
+                                                    نقش انتخاب کنید
+                                                </option>
+                                                <option value="0">
+                                                    کاربر عادی
+                                                </option>
+                                                <option value="1">مدیر</option>
+                                                <option value="2">
+                                                    مدیر سیستم
+                                                </option>
+                                                <option value="3">
+                                                    مدیر شرکت
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3 ps-0">
+                                        <div
+                                            class="checkbx form-check form-switch d-flex align-items-center gap-2"
+                                        >
+                                            <input
+                                                class="checkbx2 form-check-input"
+                                                name="available-assignments"
+                                                type="checkbox"
+                                                id="available-assignments"
+                                            />
+                                            <label
+                                                class="checkbx2 form-check-label"
+                                                for="available-assignments"
+                                                >در دسترس تکالیف</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="line-vip"></div>    
+                <div class="accordion" id="accordion4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapse4"
+                                aria-expanded="true"
+                                aria-controls="collapse4"
+                            >
+                            <i class="fa-solid fa-pen"></i>
+                            <span class="ms-2">امضای الکترونیکی</span>
+                            </button>
+                        </h2>
+                        <div
+                            id="collapse4"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="heading4"
+                            data-bs-parent="#accordion4"
+                        >
+                            <div class="accordion-body container">
+                                <div
+                                    class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-lg-6"
+                                >
+                                    <div class="col mb-3 ps-0">
+                                        <div class="col naghsh">
+                                            <label class="mynaghsh" for="person"
+                                                >نقش</label
+                                            >
+                                            <select
+                                                class="myselect"
+                                                id="person"
+                                                name="naghsh"
+                                                required
+                                            >
+                                                <option
+                                                    value=""
+                                                    selected
+                                                    disabled
+                                                    hidden
+                                                >
+                                                    نقش انتخاب کنید
+                                                </option>
+                                                <option value="0">
+                                                    کاربر عادی
+                                                </option>
+                                                <option value="1">مدیر</option>
+                                                <option value="2">
+                                                    مدیر سیستم
+                                                </option>
+                                                <option value="3">
+                                                    مدیر شرکت
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3 ps-0">
+                                        <div class="form-group">
+                                            <input
+                                                type="text"
+                                                id="firstname"
+                                                name="firstname"
+                                                placeholder=" "
+                                                required
+                                            />
+                                            <label
+                                                class="mylabel"
+                                                for="firstname"
+                                                >حد امضا (ریال)</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3 ps-0">
+                                        <div
+                                            class="checkbx form-check form-switch d-flex align-items-center gap-2"
+                                        >
+                                            <input
+                                                class="checkbx2 form-check-input"
+                                                name="possibility-sign"
+                                                type="checkbox"
+                                                id="possibility-sign"
+                                            />
+                                            <label
+                                                class="checkbx2 form-check-label"
+                                                for="possibility-sign"
+                                                >امکان امضا نامه ها</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3 ps-0">
+                                        <div
+                                            class="checkbx form-check form-switch d-flex align-items-center gap-2"
+                                        >
+                                            <input
+                                                class="checkbx2 form-check-input"
+                                                name="possibility-confirming"
+                                                type="checkbox"
+                                                id="possibility-confirming"
+                                            />
+                                            <label
+                                                class="checkbx2 form-check-label"
+                                                for="possibility-confirming"
+                                                >امکان تایید نامه ها</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3 ps-0">
+                                        <div class="form-group">
+                                            <input
+                                                type="file"
+                                                id="emza"
+                                                name="emza"
+                                                placeholder=" "
+                                                required
+                                            />
+                                            <label
+                                                class="mylabel"
+                                                for="emza"
+                                                >امضا</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
             </div>
             <div class="line"></div>
             <div class="row">
