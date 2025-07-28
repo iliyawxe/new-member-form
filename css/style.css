@@ -34,7 +34,9 @@ body {
     height: 90%;
     width: 80%;
     justify-items: center;
-    background-color: rgb(36, 36, 46);
+    background-image: url(../images/backg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 12px;
     padding: 20px;
     border: 1px solid rgb(41, 41, 43);
@@ -82,7 +84,7 @@ body {
     font-size: 12px;
     color: #fff;
     border-radius: 4px;
-    background-color: rgb(36, 36, 46);
+    background-color:rgb(16, 16, 41);
 }
 .add-member textarea:focus + .mylabel,
 .add-member textarea:not(:placeholder-shown) + .mylabel {
@@ -91,7 +93,7 @@ body {
     font-size: 12px;
     color: #fff;
     border-radius: 4px;
-    background-color: rgb(36, 36, 46);
+    background-color:rgb(16, 16, 41);
 }
 .line {
     margin: 20px 0px;
@@ -178,7 +180,7 @@ body {
     font-size: 12px;
     color: #fff;
     border-radius: 4px;
-    background-color: rgb(36, 36, 46);
+    background-color:rgb(16, 16, 41);
     z-index: 1;
 }
 ::-webkit-scrollbar {
@@ -211,10 +213,16 @@ body {
     color: #fff;
 }
 .accordion-body {
-    background-color: rgb(36, 36, 46);
+    background:hsla(0, 0%, 100%, 0);
+    backdrop-filter:blur(6px);
+    overflow: hidden;
 }
 .accordion-button:not(.collapsed) {
     background-color: #ccc;
+    color: #000;
+}
+.accordion-button{
+    background-color: #fff;
     color: #000;
 }
 .accordion-button.collapsed::after {
@@ -224,6 +232,7 @@ body {
     width: 100%;
 }
 .accordion {
+    overflow: hidden;
     border: 1px solid #000;
     border-radius: 5px;
     box-shadow: 4px 4px #000;
