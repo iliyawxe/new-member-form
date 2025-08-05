@@ -24,7 +24,7 @@
 }
 body {
     font-family: Dana;
-    background-color: #101010;
+    background-color: #080808;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@ body {
     height: 90%;
     width: 80%;
     justify-items: center;
-    background-image: url(../images/backg.jpg);
+    background-image: url(../images/bbb1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 12px;
@@ -84,7 +84,7 @@ body {
     font-size: 12px;
     color: #fff;
     border-radius: 4px;
-    background-color:rgb(16, 16, 41);
+    background-color: #121214;
 }
 .add-member textarea:focus + .mylabel,
 .add-member textarea:not(:placeholder-shown) + .mylabel {
@@ -93,7 +93,7 @@ body {
     font-size: 12px;
     color: #fff;
     border-radius: 4px;
-    background-color:rgb(16, 16, 41);
+    background-color: #121214;
 }
 .line {
     margin: 20px 0px;
@@ -172,7 +172,7 @@ body {
 .naghsh {
     position: relative;
 }
-.mynaghsh {
+.mylabel-naghsh {
     position: absolute;
     right: 20px;
     top: 2px;
@@ -180,7 +180,7 @@ body {
     font-size: 12px;
     color: #fff;
     border-radius: 4px;
-    background-color:rgb(16, 16, 41);
+    background-color: #121214;
     z-index: 1;
 }
 ::-webkit-scrollbar {
@@ -233,7 +233,7 @@ body {
 }
 .accordion {
     overflow: hidden;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     border-radius: 5px;
     box-shadow: 4px 4px #000;
 }
